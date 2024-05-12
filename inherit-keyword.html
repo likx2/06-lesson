@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      /* All strong elements 
+      will have this properties */
+      strong {
+        font-weight: 900;
+      }
+
+      .my-component {
+        font-weight: 500;
+      }
+
+      /* Make strong inside my-component 
+      to have the same font-weight */
+      .my-component strong {
+        font-weight: inherit;
+      }
+    </style>
+  </head>
+  <body>
+    <strong>Strong outside my component</strong>
+    <div class="my-component">
+      <strong> Strong inside my component </strong>
+    </div>
+  </body>
+</html>

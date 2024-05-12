@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      /* Global color styles for paragraph in authored CSS */
+      p {
+        margin-top: 2em;
+        color: goldenrod;
+      }
+
+      /* The p needs to be reset in asides, so you can use unset */
+      aside p {
+        margin: unset;
+        color: unset;
+      }
+    </style>
+  </head>
+  <body>
+    <article>
+      <p>I have various properties set, globally.</p>
+    </article>
+    <aside>
+      <p>I want the global properties set on paragraphs unset.</p>
+    </aside>
+  </body>
+</html>

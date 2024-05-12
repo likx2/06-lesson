@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      a {
+        color: red; /* 1 point of specificity */
+      }
+
+      a.my-class {
+        color: green; /* 11 point of specificity */
+      }
+
+      a.my-class.another-class {
+        color: rebeccapurple; /* 21 point of specificity */
+      }
+
+      a.my-class.another-class[href] {
+        color: goldenrod; /* 31 point of specificity */
+      }
+
+      a.my-class.another-class[href]:hover {
+        color: lightgrey; /* 41 point of specificity */
+      }
+    </style>
+  </head>
+  <body>
+    <a class="my-class another-class" href="#">A link</a>
+  </body>
+</html>
